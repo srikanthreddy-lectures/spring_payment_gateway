@@ -1,6 +1,6 @@
-package com.example.paymentgateway.repository;
+package com.example.springboot.repository;
 
-import com.example.paymentgateway.model.Payment;
+import com.example.springboot.model.Payment;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package com.example.paymentgateway.model;
+package com.example.springboot.model;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;

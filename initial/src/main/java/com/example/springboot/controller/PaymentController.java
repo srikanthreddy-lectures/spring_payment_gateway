@@ -1,8 +1,8 @@
-package com.example.paymentgateway.controller;
+package com.example.springboot.controller;
 
-import com.example.paymentgateway.model.Payment;
-import com.example.paymentgateway.model.PaymentRequest;
-import com.example.paymentgateway.service.PaymentService;
+import com.example.springboot.model.Payment;
+import com.example.springboot.model.PaymentRequest;
+import com.example.springboot.service.PaymentService;
 
 import jakarta.validation.Valid;
 
@@ -10,8 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
-@RequestMapping("/api/payments")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PaymentController {
 
     private final PaymentService paymentService;
@@ -26,6 +28,11 @@ public class PaymentController {
         Payment payment = paymentService.processPayment(paymentRequest);
         return new ResponseEntity<>(payment, HttpStatus.CREATED);
     }
+
+    @GetMapping("/")
+	public String index() {
+		return "Payment gateway!";
+	}
 
     // Check Payment Status
     @GetMapping("/{transactionId}")

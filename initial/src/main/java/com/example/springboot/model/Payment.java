@@ -1,4 +1,4 @@
-package com.example.paymentgateway.model;
+package com.example.springboot.model;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

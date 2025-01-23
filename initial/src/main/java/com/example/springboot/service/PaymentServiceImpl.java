@@ -1,8 +1,8 @@
-package com.example.paymentgateway.service;
+package com.example.springboot.service;
 
-import com.example.paymentgateway.model.Payment;
-import com.example.paymentgateway.model.PaymentRequest;
-import com.example.paymentgateway.repository.PaymentRepository;
+import com.example.springboot.model.Payment;
+import com.example.springboot.model.PaymentRequest;
+import com.example.springboot.repository.PaymentRepository;
 
 import org.springframework.stereotype.Service;
 

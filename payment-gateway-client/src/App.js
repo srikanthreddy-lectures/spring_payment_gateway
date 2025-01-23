@@ -20,7 +20,7 @@ function App() {
   };
 
   const initiatePayment = () => {
-    axios.post('http://localhost:8080/api/payments', payment, {
+    axios.post('http://localhost:8080/', payment, {
       auth: {
         username: 'admin',
         password: 'admin123'
@@ -36,7 +36,7 @@ function App() {
   };
 
   const checkStatus = () => {
-    axios.get(`http://localhost:8080/api/payments/${transactionId}`, {
+    axios.get(`http://localhost:8080/${transactionId}`, {
       auth: {
         username: 'admin',
         password: 'admin123'

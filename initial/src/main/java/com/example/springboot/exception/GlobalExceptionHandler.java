@@ -1,4 +1,4 @@
-package com.example.paymentgateway.exception;
+package com.example.springboot.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
